@@ -9,17 +9,17 @@ const navbarlinks = [
     },
     {
         id:2,
-        title:"Nosotros",
+        title:"Proyectos",
         Link:"/"
     },
     {
         id:3,
-        title:"Contacto",
+        title:"Sobre mí",
         Link:"/"
     },
     {
         id:4,
-        title:"Ayuda",
+        title:"Contacto",
         Link:"/"
     },
 ]
@@ -32,7 +32,7 @@ const Navbar = () => {
     }
 
   return (
-    <nav className='fixed top-0 left-0 bg-purple-900 w-full bg-opacity-30 backdrop-blur-md z-50'>
+    <nav className='fixed top-0 left-0 bg-black/30 w-full  backdrop-blur-md '>
       <div className='flex justify-between items-center sm:px-12 px-4 sm:py-6 py-3'>
         <div>
             <img src={Logo} alt='Logo del sitio' className='w-[100px]'/>
@@ -66,7 +66,7 @@ const Navbar = () => {
       </div>
 
       {/* Menú mobile*/}
-      <div className={`md:hidden absolute w-full bg-purple-950 transition-all duration-300 ${isOpen ? "opacity-100 visible" : "opacity-0 invisible"}`}>
+      <div className={`md:hidden absolute w-full bg-black transition-all duration-300 ${isOpen ? "opacity-100 visible" : "opacity-0 invisible"}`}>
           <ul className='flex flex-col px-4 py-2'>
                 {navbarlinks.map((link)=>(
                 <li key={link.id} className='py-2 text-center'>
