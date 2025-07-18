@@ -1,5 +1,6 @@
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
+import About from "./components/About/About";
 
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div className="bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white font-sans">
       <Navbar/>
       <Hero/>
+      <About/>
     </div>
   );
 }

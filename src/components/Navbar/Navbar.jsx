@@ -32,7 +32,7 @@ const Navbar = () => {
     }
 
   return (
-    <nav className='fixed top-0 left-0 bg-black/30 w-full  backdrop-blur-md '>
+    <nav className='fixed top-0 left-0 w-full  backdrop-blur-md z-50'>
       <div className='flex justify-between items-center sm:px-12 px-4 sm:py-6 py-3'>
         <div>
             <img src={Logo} alt='Logo del sitio' className='w-[100px]'/>
@@ -66,15 +66,26 @@ const Navbar = () => {
       </div>
 
       {/* Menú mobile*/}
-      <div className={`md:hidden absolute w-full bg-black transition-all duration-300 ${isOpen ? "opacity-100 visible" : "opacity-0 invisible"}`}>
-          <ul className='flex flex-col px-4 py-2'>
-                {navbarlinks.map((link)=>(
-                <li key={link.id} className='py-2 text-center'>
-                    <a className= 'text-white hover:text-sky-200' href={link.Link} onClick={()=>setIsOpen(false)}>{link.title}</a>
-                </li>
-                ))}
-            </ul>
-        </div>
+      <div
+  className={`md:hidden absolute top-full left-0 w-full bg-black transition-all duration-300 z-50 ${
+    isOpen ? "opacity-100 visible" : "opacity-0 invisible"
+  }`}
+>
+  <ul className="flex flex-col px-4 py-2">
+    {navbarlinks.map((link) => (
+      <li key={link.id} className="py-2 text-center">
+        <a
+          className="text-white hover:text-sky-200"
+          href={link.Link}
+          onClick={() => setIsOpen(false)}
+        >
+          {link.title}
+        </a>
+      </li>
+    ))}
+  </ul>
+</div>
+
     </nav>
   )
 }

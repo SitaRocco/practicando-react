@@ -1,6 +1,4 @@
 import React, { useEffect } from 'react'
-import Personaje from "../../assets/Personaje.png"
-import Logo from "../../assets/Logo.png"
 import { motion } from "framer-motion"
 import { slipeUp } from '../../utility/animation'
 
@@ -27,7 +25,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative flex items-center justify-center min-h-screen px-4 overflow-hidden">
+    <section className="relative flex items-center justify-center min-h-screen px-4 overflow-hidden bg-orange-100">
       {/* Fondo animado */}
       <div className="falling-shapes absolute top-0 left-0 w-full h-full pointer-events-none z-0"></div>
 
@@ -36,19 +34,17 @@ const Hero = () => {
           
           {/* Texto */}
           <div className="p-6 sm:p-10 text-center flex flex-col justify-center items-center">
-            <h1 className="text-4xl sm:text-5xl font-bold text-blue-400 mb-6 mt-6">
+            <h1 className="text-4xl sm:text-5xl font-bold text-fuchsia-900 mb-6 mt-6">
               Rocío Castillo
             </h1>
             <p className="text-white text-base sm:text-lg max-w-prose">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit...
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4 mt-6">
-              <a
-                href="#projects"
-                className="bg-yellow-600 py-2 px-8 sm:px-12 rounded-3xl hover:bg-black transition-all duration-300 whitespace-nowrap text-center"
-              >
-                Ver proyectos
-              </a>
+              <button className="rounded-2xl px-6 py-2 bg-white text-black border border-black border-b-4 hover:bg-gray-100 active:translate-y-[2px] transition-all duration-150">
+  Proyectos
+</button>
+
               
             </div>
           </div>
@@ -57,7 +53,9 @@ const Hero = () => {
           
         </div>
       </div>
+      
     </section>
+    
   )
 }
 
