@@ -6,7 +6,7 @@ import About from "./components/About/About";
 function App() {
 
   return (
-    <div className="bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white font-sans">
+    <div className="bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white font-sans-serif">
       <Navbar/>
       <Hero/>
       <About/>

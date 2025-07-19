@@ -25,7 +25,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative flex items-center justify-center min-h-screen px-4 overflow-hidden bg-orange-100">
+    <section className="relative flex items-center justify-center min-h-screen px-4 overflow-hidden bg-lime-50">
       {/* Fondo animado */}
       <div className="falling-shapes absolute top-0 left-0 w-full h-full pointer-events-none z-0"></div>
 
@@ -34,15 +34,15 @@ const Hero = () => {
           
           {/* Texto */}
           <div className="p-6 sm:p-10 text-center flex flex-col justify-center items-center">
-            <h1 className="text-4xl sm:text-5xl font-bold text-fuchsia-900 mb-6 mt-6">
+            <h1 className="text-4xl sm:text-7xl  font-extrabold text-zinc-700 mb-6 mt-6">
               Rocío Castillo
             </h1>
-            <p className="text-white text-base sm:text-lg max-w-prose">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+            <p className="text-zinc-700 text-base sm:text-xl max-w-prose font-bold">
+              Desarrolladora y Diseñadora web
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4 mt-6">
-              <button className="rounded-2xl px-6 py-2 bg-white text-black border border-black border-b-4 hover:bg-gray-100 active:translate-y-[2px] transition-all duration-150">
-  Proyectos
+              <button className="rounded-3xl px-6 py-2 bg-linear-to-bl from-purple-500 to-pink-500 text-zinc-50 font-bold ">
+  Ver Proyectos
 </button>
 
               
