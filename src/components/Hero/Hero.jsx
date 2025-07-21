@@ -42,7 +42,7 @@ const Hero = () => {
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4 mt-6">
               <button className="rounded-3xl px-6 py-2 bg-linear-to-bl from-purple-500 to-pink-500 text-zinc-50 font-bold ">
-  Ver Proyectos (prueba)
+  Ver Proyectos
 </button>
 
               
