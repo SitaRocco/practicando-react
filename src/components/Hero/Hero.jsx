@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { motion } from "framer-motion"
 import { slipeUp } from '../../utility/animation'
-import fondo from '../../assets/fondo.png'
+import fondo from '../../assets/fondo.png';
 
 
 const Hero = () => {

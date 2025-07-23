@@ -27,33 +27,33 @@ function About() {
   </div>
   <h2 className="text-4xl sm:text-7xl text-center font-bold mb-2 text-emerald-200 py-16">Servicios</h2>
 <div>
-  <div class="container px-4 md:px-12 py-12 mx-auto">
-    <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 border rounded-lg shadow bg-zinc-50  border-black border-b-[4px] p-4 md:p-6 text-center">
-      <div class="flex flex-wrap flex-col items-center justify-center px-1 md:px-6">
+  <div className="container px-4 md:px-12 py-12 mx-auto">
+    <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 border rounded-lg shadow bg-zinc-50  border-black border-b-[4px] p-4 md:p-6 text-center">
+      <div className="flex flex-wrap flex-col items-center justify-center px-1 md:px-6">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-          class="w-8 h-8 dark:text-indigo-400">
+          className="w-8 h-8 dark:text-indigo-400">
           <path stroke-linecap="round" stroke-linejoin="round"
             d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25" />
         </svg>
 
 
 
-        <h1 class="mt-4 text-xl font-semibold text-zinc-700">Rediseño de Sitios Web</h1>
+        <h1 className="mt-4 text-xl font-semibold text-zinc-700">Rediseño de Sitios Web</h1>
 
-        <p class="mt-2 text-zinc-700 text-xl sm:text-2xl">Actualización del diseño, contenido y funcionalidad de un sitio web</p>
+        <p className="mt-2 text-zinc-700 text-xl sm:text-2xl">Actualización del diseño, contenido y funcionalidad de un sitio web</p>
       </div>
 
-      <div class="flex flex-wrap flex-col items-center justify-center px-6">
+      <div className="flex flex-wrap flex-col items-center justify-center px-6">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-          class="w-8 h-8 dark:text-indigo-400">
+          className="w-8 h-8 dark:text-indigo-400">
           <path stroke-linecap="round" stroke-linejoin="round"
             d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
         </svg>
 
 
-        <h1 class="mt-4 text-xl font-semibold text-zinc-700">Desarrollo Web</h1>
+        <h1 className="mt-4 text-xl font-semibold text-zinc-700">Desarrollo Web</h1>
 
-        <p class="mt-2 text-zinc-700 text-xl sm:text-2xl">Investigación de usuario y análisis de objetivos, planificación de la arquitectura del sitio, diseño visual adaptable y desarrollo funcional</p>
+        <p className="mt-2 text-zinc-700 text-xl sm:text-2xl">Investigación de usuario y análisis de objetivos, planificación de la arquitectura del sitio, diseño visual adaptable y desarrollo funcional</p>
       </div>
 
      
