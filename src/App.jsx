@@ -1,16 +1,20 @@
-import Hero from "./components/Hero/Hero";
-import Navbar from "./components/Navbar/Navbar";
-import About from "./components/About/About";
-
+import Home from "./pages/home";
+import Abogados from "./pages/abogados";
+import Patadepato from "./pages/patadepato";
+import { BrowserRouter, Routes, Route } from "react-router-dom"; //importas estas cosas
 
 function App() {
 
   return (
-    <div className="bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white font-sans-serif">
-      <Navbar/>
-      <Hero/>
-      <About/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />}>
+          <Route index element={<Home />} />
+            <Route path="/patadepato" element={<Patadepato />} />
+            <Route path="/abogados" element={<Abogados />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

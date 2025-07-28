@@ -1,26 +1,27 @@
 import React, {useState} from 'react'
 import Logo from '../../assets/loguitobello.png'
+import { Outlet, Link } from "react-router-dom";
 
 const navbarlinks = [
     {
         id:1,
         title:"Inicio",
-        Link:"/"
+        Link:"#inicio"
     },
     {
         id:2,
         title:"Proyectos",
-        Link:"/"
+        Link:"#proyectos"
     },
     {
         id:3,
         title:"Sobre mí",
-        Link:"/"
+        Link:"#about"
     },
     {
         id:4,
         title:"Contacto",
-        Link:"/"
+        Link:"#contacto"
     },
 ]
 
@@ -32,7 +33,7 @@ const Navbar = () => {
     }
 
   return (
-    <nav className='fixed top-0 left-0 w-full bg-opacity-30 backdrop-blur-md z-50'>
+    <nav className='fixed top-0 left-0 w-full  bg-gradient-to-r from-emerald-100 to-emerald-300 z-50'>
       <div className='flex justify-between items-center sm:px-12 px-4 sm:py-6 py-3'>
          {/*
         <div>
@@ -63,12 +64,15 @@ const Navbar = () => {
                 </li>
                 ))}
             </ul>
+            <li>
+              
+            </li>
         </div>
       </div>
 
       {/* Menú mobile*/}
       <div
-  className={`md:hidden absolute top-full left-0 w-full bg-zinc-700 transition-all duration-300 z-50 ${
+  className={`md:hidden absolute top-full left-0 w-full bg-zinc-200 transition-all duration-300 z-50 ${
     isOpen ? "opacity-100 visible" : "opacity-0 invisible"
   }`}
 >
@@ -76,7 +80,7 @@ const Navbar = () => {
     {navbarlinks.map((link) => (
       <li key={link.id} className="py-2 text-center">
         <a
-          className="text-white hover:text-indigo-400"
+          className="text-zinc-700 hover:text-indigo-400"
           href={link.Link}
           onClick={() => setIsOpen(false)}
         >
