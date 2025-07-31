@@ -4,10 +4,17 @@ import fondo from '../../assets/fondo.png';
 import { createClient } from "smtpexpress"
 
 // variables de entorno
+const smtp_projectId = import.meta.env.VITE_smtp_projectId;
+const smtp_projectSecret = import.meta.env.VITE_smtp_projectSecret;
+const smtp_email = import.meta.env.VITE_smtp_email;
+const smtp_recipient = import.meta.env.VITE_smtp_recipient;
+
+/*
 const smtp_projectId = process.env.smtp_projectId;
 const smtp_projectSecret = process.env.smtp_projectSecret;
 const smtp_email = process.env.smtp_email;
 const smtp_recipient = process.env.smtp_recipient;
+*/
 
 export const smtpexpressClient = createClient({
   projectId: smtp_projectId,
@@ -22,26 +29,26 @@ function Contact() {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-const handleSubmit = async (e) => {
-  e.preventDefault();
-  setStatus('Enviando...');
-  try {
-    await smtpexpressClient.sendApi.sendMail({
-      subject: `Nuevo mensaje de ${form.name}`,
-      message: `Nombre: ${form.name}\nEmail de contacto: ${form.email}\nMensaje: ${form.message}`,
-      sender: {
-        name: "Portafolio",
-        email: smtp_email
-      },
-      recipients: smtp_recipient
-    });
-    setStatus('¡Mensaje enviado!');
-    setForm({ name: '', email: '', message: '' });
-  } catch (error) {
-    setStatus('Error al enviar el mensaje.');
-    console.error("Error al enviar:", error);
-  }
-};
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus('Enviando...');
+    try {
+      await smtpexpressClient.sendApi.sendMail({
+        subject: `Nuevo mensaje de ${form.name}`,
+        message: `Nombre: ${form.name}\nEmail de contacto: ${form.email}\nMensaje: ${form.message}`,
+        sender: {
+          name: "Portafolio",
+          email: smtp_email
+        },
+        recipients: smtp_recipient
+      });
+      setStatus('¡Mensaje enviado!');
+      setForm({ name: '', email: '', message: '' });
+    } catch (error) {
+      setStatus('Error al enviar el mensaje.');
+      console.error("Error al enviar:", error);
+    }
+  };
 
   return (
     <section id="contacto">
