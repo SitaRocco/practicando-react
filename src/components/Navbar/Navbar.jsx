@@ -1,6 +1,4 @@
-import React, {useState} from 'react'
-import Logo from '../../assets/loguitobello.png'
-import { Outlet, Link } from "react-router-dom";
+import {useState, React} from 'react'
 
 const navbarlinks = [
     {

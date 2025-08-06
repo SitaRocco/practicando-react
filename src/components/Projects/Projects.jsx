@@ -24,9 +24,9 @@ const projects = [
 
 function Projects() {
   return (
-    <section className="bg-indigo-300" id="proyectos">
+    <section className="bg-indigo-200" id="proyectos">
       <div className="py-4 px-2 mx-auto max-w-screen-2xl sm:py-4 lg:px-6">
-        <h2 className="text-4xl sm:text-9xl font-bold mb-24 text-zinc-700 text-center mt-12">
+        <h2 className="text-4xl sm:text-8xl font-bold mb-24 text-zinc-700 text-center mt-12">
           Proyectos
         </h2>
 

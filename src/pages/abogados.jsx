@@ -1,17 +1,6 @@
-import Navbar from '../components/Navbar/Navbar';
-import Contact from '../components/Contact/Contact';
-import Footer from '../components/Footer/Footer';
-import mockup from '../../src/assets/mockup-abogados.png'
-import fondo from '../../src/assets/abogados.jpg';
-import figma from '../../src/assets/figma.svg'
-import elementor from '../../src/assets/elementor.svg'
-import wordpress from '../../src/assets/wordpress.svg'
-import mockup2 from '../../src/assets/mockup-2.png'
-import page1 from '../../src/assets/page1.png'
-import page2 from '../../src/assets/page2.png'
-import page3 from '../../src/assets/page-3.png'
-import page4 from '../../src/assets/page-4.png'
-import page5 from '../../src/assets/page-5.png'
+import {Navbar, Contact, Footer} from '../components/Components';
+import { mockup, fondo, figma, elementor, wordpress, mockup2, page1, page2, page3, page4, page5 } from '../assets/Assets';
+import { Link, Outlet } from 'react-router-dom';
 
 
 
@@ -19,9 +8,9 @@ function Abogados() {
   return (
    <>
       <Navbar />
-<section className="overflow-hidden " >
+<section className="overflow-hidden ">
   {/* Banner de imagen arriba */}
-      <div className="w-full mx-auto  bg-emerald-200">
+      <div className="w-full mx-auto  bg-indigo-200">
         <div className="relative w-full mx-auto h-[40rem]">
   <img
     src={fondo}
@@ -40,9 +29,9 @@ function Abogados() {
                 <p className="mt-4 text-gray-600 text-lg">
                     Este proyecto fue desarrollado durante mi práctica profesional en colaboración con la agencia SBS Publicidad. Consistió en el rediseño del sitio web de un estudio de abogados, utilizando Elementor como herramienta principal. El mayor desafío fue trabajar con recursos visuales limitados, lo que nos llevó a implementar soluciones de diseño que lograran proyectar una imagen moderna y profesional.</p>
                   <div className="flex justify-center items-center gap-6 mt-8">
-                   <img src={figma} alt="Figma" className="w-15 h-15 mt-7" /> 
-                   <img src={elementor} alt="elementor" className="w-15 h-15 mt-7" /> 
-                   <img src={wordpress} alt="wordpress" className="w-15 h-15 mt-7" /> 
+                   <img src={figma} alt="Figma" className="w-12 h-12 mt-7" /> 
+                   <img src={elementor} alt="elementor" className="w-12 h-12 mt-7" /> 
+                   <img src={wordpress} alt="wordpress" className="w-12 h-12 mt-7" /> 
                    </div>
            </div>
       
@@ -68,7 +57,7 @@ function Abogados() {
           <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
             <div className="relative pl-9">
               <dt className="inline font-semibold text-gray-900"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                  fill="currentColor" aria-hidden="true" className="absolute left-1 top-1 h-5 w-5 text-indigo-600">
+                  fill="currentColor" aria-hidden="true" className="absolute left-1 top-1 h-5 w-5 text-indigo-400">
                   <path
                     d="M3.196 12.87l-.825.483a.75.75 0 000 1.294l7.25 4.25a.75.75 0 00.758 0l7.25-4.25a.75.75 0 000-1.294l-.825-.484-5.666 3.322a2.25 2.25 0 01-2.276 0L3.196 12.87z">
                   </path>
@@ -87,7 +76,7 @@ Se utilizó una plantilla de Elementor como base para estructurar el sitio web, 
             <div className="relative pl-9">
               <dt className="inline font-semibold text-gray-900">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"
-                  className="absolute left-1 top-1 h-5 w-5 text-indigo-600">
+                  className="absolute left-1 top-1 h-5 w-5 text-indigo-400">
                   <path fill-rule="evenodd"
                     d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z"
                     clip-rule="evenodd"></path>
@@ -99,7 +88,7 @@ Varias secciones de la plantilla original no eran del agrado del cliente, por lo
             </div>
             <div className="relative pl-9">
               <dt className="inline font-semibold text-gray-900"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                  fill="currentColor" aria-hidden="true" class="absolute left-1 top-1 h-5 w-5 text-indigo-600">
+                  fill="currentColor" aria-hidden="true" className="absolute left-1 top-1 h-5 w-5 text-indigo-400">
                   <path fill-rule="evenodd"
                     d="M14.5 10a4.5 4.5 0 004.284-5.882c-.105-.324-.51-.391-.752-.15L15.34 6.66a.454.454 0 01-.493.11 3.01 3.01 0 01-1.618-1.616.455.455 0 01.11-.494l2.694-2.692c.24-.241.174-.647-.15-.752a4.5 4.5 0 00-5.873 4.575c.055.873-.128 1.808-.8 2.368l-7.23 6.024a2.724 2.724 0 103.837 3.837l6.024-7.23c.56-.672 1.495-.855 2.368-.8.096.007.193.01.291.01zM5 16a1 1 0 11-2 0 1 1 0 012 0z"
                     clip-rule="evenodd"></path>
@@ -117,7 +106,7 @@ Uno de los principales desafíos fue adaptar la plantilla a los requerimientos d
       </div>
     </div>
   </div>
-<div className="mb-6 text-center sm:text-2xl text-xl">
+<div className="mb-6 text-center sm:text-2xl text-xl ">
     <a
       href="https://abogadosvinadelmar.cl/"
       target="_blank"
@@ -142,49 +131,72 @@ Uno de los principales desafíos fue adaptar la plantilla a los requerimientos d
     </a>
   </div>
 
-  <div className="py-4 px-2 mx-auto max-w-screen-xl sm:py-40 lg:px-6">
-		<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 h-full">
-			<div className="col-span-2 sm:col-span-1 md:col-span-2 h-auto md:h-full flex flex-col">
-				<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
-					<img src={page1} alt="abogados-web" className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"/>
-					
-					
-				</a>
-			</div>
-			<div className="col-span-2 sm:col-span-1 md:col-span-2">
-				<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 mb-4">
-					<img src={page2} alt="abogados-web" className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"/>
-					
+ <div className="px-4 py-12 sm:px-6 lg:px-8">
+  {/* Card con fondo blanco y bordes */}
+  <div className="bg-zinc-100 border border-black border-b-[4px] rounded-xl p-6">
+    
+    <div className="py-4 px-2 mx-auto max-w-screen-xl sm:py-24lg:px-6">
+              <h2 className="text-4xl sm:text-7xl font-bold mb-24 text-zinc-700 text-center">Galería de Imágenes</h2>
 
-				</a>
-				<div className="grid gap-4 grid-cols-2 sm:grid-cols-2 lg:grid-cols-2">
-					<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
-						<img src={page3} alt="abogados-web" className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"/>
-						
-						
-					</a>
-					<a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
-						<img src={page4} alt="abogados-web" className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"/>
-						
-					</a>
-				</div>
-			</div>
-			<div className="col-span-2 sm:col-span-1 md:col-span-1 h-auto md:h-full flex flex-col">
-				<a href="" class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
-					<img src={page5} alt="abogados-web" class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"/>
-					
-				</a>
-			</div>
-		</div>
-	</div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 h-full">
+        <div className="col-span-2 sm:col-span-1 md:col-span-2 h-auto md:h-full flex flex-col">
+          <a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
+            <img
+              src={page1}
+              alt="abogados-web"
+              className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
+            />
+          </a>
+        </div>
+
+        <div className="col-span-2 sm:col-span-1 md:col-span-2">
+          <a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 mb-4">
+            <img
+              src={page2}
+              alt="abogados-web"
+              className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
+            />
+          </a>
+          <div className="grid gap-4 grid-cols-2 sm:grid-cols-2 lg:grid-cols-2">
+            <a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
+              <img
+                src={page3}
+                alt="abogados-web"
+                className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
+              />
+            </a>
+            <a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
+              <img
+                src={page4}
+                alt="abogados-web"
+                className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div className="col-span-2 sm:col-span-1 md:col-span-1 h-auto md:h-full flex flex-col">
+          <a href="" className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
+            <img
+              src={page5}
+              alt="abogados-web"
+              className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
+            />
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
 
   <div className=" text-center sm:mt-0 mt-12 mb-32">
-  <a
-    href="/proyectos"
+  <Link to={'/#proyectos'}
     className=" cursor-pointer inline-block bg-gradient-to-r from-indigo-200 to-indigo-400 px-6 py-3 rounded-3xl"
   >
     Volver a proyectos
-  </a>
+  </Link>
 </div>
 
 </section>
