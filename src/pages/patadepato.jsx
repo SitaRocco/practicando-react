@@ -29,12 +29,12 @@ function Patadepato() {
                 <p className="mt-4 text-gray-600 text-lg">
                     Este sitio web para la marca Pata de Pato, que crea accesorios hechos a mano con cuero reciclado, tenía como objetivo reflejar uno de sus principales valores: el compromiso con el cuidado del medio ambiente. Además de mostrar y vender sus productos, el sitio debía incorporar un proyecto personal de su creador: una iniciativa de limpieza de playas que realiza junto a su perrita 🐕 y un pato 🦆. El desafío fue encontrar una forma de equilibrar ambos mundos: por un lado, visibilizar la causa medioambiental; por otro, mantener el enfoque comercial claro y atractivo.</p>
                   <div className="flex justify-center items-center gap-6 mt-8">
-                   <img src={figma} alt="Figma" className="w-12 h-12 mt-7" />
-                    <img src={html} alt="html" className="w-12 h-12 mt-7" />
-                    <img src={css} alt="css" className="w-12 h-12 mt-7" />
-                    <img src={javascript} alt="javascript" className="w-12 h-12 mt-7"/>
-                   <img src={php} alt="php" className="w-12 h-12 mt-7" /> 
-                   <img src={wordpress} alt="wordpress" className="w-12 h-12 mt-7" /> 
+                   <img src={figma} alt="Figma" className="w-8 h-8 lg:w-12 lg:h-12 mt-7" />
+                    <img src={html} alt="html" className="w-8 h-8 lg:w-12 lg:h-12 mt-7" />
+                    <img src={css} alt="css" className="w-8 h-8 lg:w-12 lg:h-12 mt-7" />
+                    <img src={javascript} alt="javascript" className="w-8 h-8 lg:w-12 lg:h-12 mt-7"/>
+                   <img src={php} alt="php" className="w-8 h-8 lg:w-12 lg:h-12 mt-7" /> 
+                   <img src={wordpress} alt="wordpress" className="w-8 h-8 lg:w-12 lg:h-12 mt-7" /> 
                    </div>
            </div>
       
@@ -57,7 +57,7 @@ function Patadepato() {
           
           <p className="mt-2  font-bold tracking-tight text-gray-900 text-4xl sm:text-7xl">Parte del Proceso</p>
          
-          <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
+          <dl className="mt-10 max-w-xl space-y-8 text-lg leading-7 text-gray-600 lg:max-w-none">
             <div className="relative pl-9">
               <dt className="inline font-semibold text-gray-900"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                   fill="currentColor" aria-hidden="true" className="absolute left-1 top-1 h-5 w-5 text-indigo-400">

@@ -29,9 +29,9 @@ function Abogados() {
                 <p className="mt-4 text-gray-600 text-lg">
                     Este proyecto fue desarrollado durante mi práctica profesional en colaboración con la agencia SBS Publicidad. Consistió en el rediseño del sitio web de un estudio de abogados, utilizando Elementor como herramienta principal. El mayor desafío fue trabajar con recursos visuales limitados, lo que nos llevó a implementar soluciones de diseño que lograran proyectar una imagen moderna y profesional.</p>
                   <div className="flex justify-center items-center gap-6 mt-8">
-                   <img src={figma} alt="Figma" className="w-12 h-12 mt-7" /> 
-                   <img src={elementor} alt="elementor" className="w-12 h-12 mt-7" /> 
-                   <img src={wordpress} alt="wordpress" className="w-12 h-12 mt-7" /> 
+                   <img src={figma} alt="Figma" className="w-8 h-8 lg:w-12 lg:h-12 mt-7" /> 
+                   <img src={elementor} alt="elementor" className="w-8 h-8 lg:w-12 lg:h-12 mt-7" /> 
+                   <img src={wordpress} alt="wordpress" className="w-8 h-8 lg:w-12 lg:h-12 mt-7" /> 
                    </div>
            </div>
       
@@ -54,7 +54,7 @@ function Abogados() {
           
           <p className="mt-2  font-bold tracking-tight text-gray-900 text-4xl sm:text-7xl">Parte del Proceso</p>
          
-          <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
+          <dl className="mt-10 max-w-xl space-y-8 text-lg leading-7 text-gray-600 lg:max-w-none">
             <div className="relative pl-9">
               <dt className="inline font-semibold text-gray-900"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                   fill="currentColor" aria-hidden="true" className="absolute left-1 top-1 h-5 w-5 text-indigo-400">
