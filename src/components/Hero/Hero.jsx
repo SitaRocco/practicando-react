@@ -45,8 +45,9 @@ const Hero = () => {
   />
 
   {/* Recuadro principal */}
-  <div className="grid grid-cols-1 gap-10 items-center w-full z-10 mt-24 sm:mt-36 lg:mt-48">
-    <div className="mt-36 p-6 sm:p-10 text-center flex flex-col justify-center items-center bg-zinc-100 rounded-xl border border-black border-b-[4px]">
+  <div className="grid grid-cols-1 gap-10 items-center w-full z-10 mt-24 sm:mt-32
+   lg:mt-48">
+    <div className="mt-36 mb-20 p-6 sm:p-10 text-center flex flex-col justify-center items-center bg-zinc-100 rounded-xl border border-black border-b-[4px]">
       <h1 className="text-4xl sm:text-7xl font-extrabold text-zinc-700 mb-6 mt-6">
         Rocío Castillo
       </h1>
