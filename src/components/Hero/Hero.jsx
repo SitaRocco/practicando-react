@@ -40,18 +40,18 @@ const Hero = () => {
   {/* Imagen saludo, centrada y detrás del recuadro */}
   <img
     src={saludo}
-    alt="Decoración"
-    className="absolute top-4 sm:top-8 left-1/2 -translate-x-1/2 w-48 sm:w-72 "
+    alt="saludo-ro"
+    className="absolute top-4 sm:top-8 left-1/2 -translate-x-1/2 w-48 sm:w-80 "
   />
 
   {/* Recuadro principal */}
   <div className="grid grid-cols-1 gap-10 items-center w-full z-10 mt-24 sm:mt-32
    lg:mt-48">
-    <div className="mt-36 mb-20 p-6 sm:p-10 text-center flex flex-col justify-center items-center bg-zinc-100 rounded-xl border border-black border-b-[4px]">
-      <h1 className="text-4xl sm:text-7xl font-extrabold text-zinc-700 mb-6 mt-6">
+    <div className="mt-36 mb-20 p-6  text-center flex flex-col justify-center items-center bg-zinc-100 rounded-xl border border-black border-b-[4px]">
+      <h1 className="text-4xl sm:text-6xl font-extrabold text-zinc-700 mb-6 mt-6">
         Rocío Castillo
       </h1>
-      <p className="text-zinc-700 text-base sm:text-4xl max-w-prose font-bold">
+      <p className="text-zinc-700 text-base sm:text-2xl max-w-prose font-bold">
         Desarrolladora y Diseñadora web
       </p>
       <div className="flex flex-col sm:flex-row justify-center gap-4 mt-6">
