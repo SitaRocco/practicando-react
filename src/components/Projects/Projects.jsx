@@ -101,7 +101,7 @@ El desafío fue equilibrar ambos mundos: visibilizar la causa medioambiental sin
               href="https://www.patadepato.cl"  target="_blank"
  
               >
-              <button className=" w-full cursor-pointer rounded-3xl px-6 py-2 bg-gradient-to-r from-indigo-200 to-indigo-400 text-zinc-700 font-bold sm:text-xl 
+              <button className=" w-full cursor-pointer rounded-3xl px-6 py-3 text-xl bg-gradient-to-r from-indigo-200 to-indigo-400 text-zinc-700 font-bold sm:text-xl 
                    hover:from-indigo-300 hover:to-indigo-500 hover:text-white hover:scale-105 transition-all duration-300">
   Ver sitio web
 </button>
@@ -174,7 +174,7 @@ El desafío fue equilibrar ambos mundos: visibilizar la causa medioambiental sin
               href="https://abogadosvinadelmar.cl/"  target="_blank"
  
               >
-             <button className=" w-full cursor-pointer rounded-3xl px-6 py-2 bg-gradient-to-r from-indigo-200 to-indigo-400 text-zinc-700 font-bold sm:text-xl 
+             <button className=" w-full cursor-pointer rounded-3xl px-6 py-3 text-xl bg-gradient-to-r from-indigo-200 to-indigo-400 text-zinc-700 font-bold sm:text-xl 
                    hover:from-indigo-300 hover:to-indigo-500 hover:text-white hover:scale-105 transition-all duration-300">
   Ver sitio web
 </button>
