@@ -54,9 +54,9 @@ const Hero = () => {
       <p className="text-zinc-700 text-base sm:text-2xl max-w-prose font-bold">
         Desarrolladora y Diseñadora web
       </p>
-      <div className="flex flex-col sm:flex-row justify-center gap-4 mt-6">
+      <div className=" flex flex-col sm:flex-row justify-center gap-4 mt-6">
         <a href="#proyectos">
-          <button className="cursor-pointer rounded-3xl px-6 py-2 bg-gradient-to-r from-indigo-200 to-indigo-400 text-zinc-700 font-bold sm:text-xl  hover:from-indigo-300 hover:to-indigo-500 hover:text-white hover:scale-105 transition-all duration-300">
+          <button className="  w-full cursor-pointer rounded-3xl px-6 py-2 bg-gradient-to-r from-indigo-200 to-indigo-400 text-zinc-700 font-bold sm:text-xl  hover:from-indigo-300 hover:to-indigo-500 hover:text-white hover:scale-105 transition-all duration-300">
             Ver Proyectos
           </button>
         </a>
