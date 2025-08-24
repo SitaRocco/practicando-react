@@ -5,8 +5,8 @@ function Home() {
     <div className="bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white font-sans-serif">
       <Navbar/>
       <Hero/>
-      <About/>
       <Projects/>
+      <About/>
       <Contact/>
       <Footer/>
     </div>

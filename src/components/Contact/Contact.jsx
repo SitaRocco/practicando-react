@@ -58,7 +58,7 @@ function Contact() {
             <img src={contactImg} alt="Contact Illustration" className="max-w-full h-auto rounded-lg" />
           </div>
           <div className="w-full lg:w-1/2 bg-zinc-50 p-8 border rounded-lg  border-black border-b-[4px]">
-            <h1 className="text-4xl text-gray-800 font-bold mb-4">¿Tienes algún proyecto en mente?</h1>
+            <h1 className="text-4xl text-gray-800 font-bold mb-4">¿Tienes un proyecto en mente?</h1>
             <form onSubmit={handleSubmit}>
               <div className="mb-4">
                 <label htmlFor="name" className="block text-lg text-gray-900 mb-1">Nombre</label>
