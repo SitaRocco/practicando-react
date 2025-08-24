@@ -8,12 +8,12 @@ const navbarlinks = [
     },
     {
         id:2,
-        title:"Proyectos",
+        title:"Portafolio",
         Link:"#proyectos"
     },
     {
         id:3,
-        title:"Sobre mí",
+        title:"Sobre mi",
         Link:"#about"
     },
     {

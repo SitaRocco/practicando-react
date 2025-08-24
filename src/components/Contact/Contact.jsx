@@ -58,7 +58,7 @@ function Contact() {
             <img src={contactImg} alt="Contact Illustration" className="max-w-full h-auto rounded-lg" />
           </div>
           <div className="w-full lg:w-1/2 bg-zinc-50 p-8 border rounded-lg  border-black border-b-[4px]">
-            <h1 className="text-4xl text-gray-800 font-bold mb-4">¿Tienes un proyecto en mente?</h1>
+            <h1 className="text-4xl text-gray-800 font-bold mb-4">¿Tienes un proyecto en mente? Escríbeme</h1>
             <form onSubmit={handleSubmit}>
               <div className="mb-4">
                 <label htmlFor="name" className="block text-lg text-gray-900 mb-1">Nombre</label>
@@ -97,7 +97,7 @@ function Contact() {
               </div>
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-indigo-200 to-indigo-400 text-zinc-700 py-3 rounded-3xl text-xl font-bold cursor-pointer hover:bg-indigo-500  transition duration-200"
+                className="w-full bg-gradient-to-r from-indigo-200 to-indigo-400 text-zinc-700 py-3 rounded-3xl text-xl font-bold cursor-pointer  hover:from-indigo-300 hover:to-indigo-500 hover:text-white hover:scale-105 transition-all duration-300"
                 disabled={status === 'Enviando...'}
               >
                 Enviar
