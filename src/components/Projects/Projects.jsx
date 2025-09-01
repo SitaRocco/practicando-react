@@ -90,9 +90,9 @@ function Projects() {
 
           <div className="text-zinc-700 mb-6 text-xl space-y-6 text-start">
             <p>
-              Este sitio web para la marca Pata de Pato, que crea accesorios hechos a mano con cuero
+              Este proyecto académico, que realicé a finales del 2024, consistíó en un sitio web para la marca Pata de Pato, que crea accesorios hechos a mano con cuero
               reciclado, tenía como objetivo reflejar su compromiso con el cuidado del medio ambiente.
-              Además de mostrar y vender sus productos, debía incorporar un proyecto personal de su
+              Además de mostrar y vender sus productos, el sitio debía incorporar un proyecto personal de su
               creador: una iniciativa de limpieza de playas que realiza junto a su perrita 🐕 y un pato 🦆.
             </p>
             <p>

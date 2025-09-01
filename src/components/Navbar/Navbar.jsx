@@ -32,7 +32,7 @@ const Navbar = () => {
 
   return (
     <nav className='fixed top-0 left-0 w-full  bg-gradient-to-r from-emerald-100 to-emerald-300 z-50'>
-      <div className='flex justify-between items-center sm:px-12 px-4 sm:py-6 py-3'>
+      <div className='flex justify-end items-center sm:px-12 px-4 sm:py-6 py-3'>
          {/*
         <div>
             <img src={Logo} alt='Logo del sitio' className='w-[100px]'/>
