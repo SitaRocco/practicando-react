@@ -244,7 +244,7 @@ function Projects() {
             <div>
               <h2 className="font-bold text-2xl">Solución:</h2>
             <p>
-              El resultado fue un sitio web renovado, sólido y profesional, que
+              El resultado fue un sitio web renovado y profesional, que
               logró proyectar confianza y claridad, cumpliendo con las
               expectativas del cliente y de la Agencia.
             </p>
