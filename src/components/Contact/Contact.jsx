@@ -58,100 +58,38 @@ function Contact() {
   };
 
   return (
-    <section id="contacto">
-      <div
-        className="w-full bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${fondo})` }}
-      >
-        <div className="flex flex-col lg:flex-row px-4 py-12 lg:px-16 max-w-screen-xl mx-auto gap-y-36 lg:gap-x-16">
-          
-          {/* Imagen lateral */}
-          <div className="w-full lg:w-1/2 flex justify-center items-center">
-            <img
-              src={contactImg}
-              alt="Contact Illustration"
-              className="max-w-full h-auto rounded-lg"
-            />
-          </div>
-
-          {/* Formulario */}
-          <div className="w-full lg:w-1/2 bg-zinc-50 p-8 border rounded-lg border-black border-b-[4px]">
-            <h1 className="text-4xl text-gray-800 font-bold mb-4 text-center">
-              ¿Tienes un proyecto en mente? Escríbeme
-            </h1>
-
-            <form onSubmit={handleSubmit}>
-              <div className="mb-4">
-                <label htmlFor="name" className="block text-lg text-gray-900 mb-1">
-                  Nombre
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  required
-                  value={form.name}
-                  onChange={handleChange}
-                  className="w-full border border-gray-400 rounded py-2 px-3 text-base text-gray-900 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200"
-                />
-              </div>
-
-              <div className="mb-4">
-                <label htmlFor="email" className="block text-lg text-gray-900 mb-1">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  required
-                  value={form.email}
-                  onChange={handleChange}
-                  className="w-full border border-gray-400 rounded py-2 px-3 text-base text-gray-900 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200"
-                />
-              </div>
-
-              <div className="mb-4">
-                <label htmlFor="message" className="block text-lg text-gray-900 mb-1">
-                  Mensaje
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  required
-                  value={form.message}
-                  onChange={handleChange}
-                  className="w-full border border-gray-400 rounded py-2 px-3 h-32 text-base text-gray-900 resize-none focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200"
-                />
-              </div>
-
-              <button
-                type="submit"
-                className="w-full bg-gradient-to-r from-indigo-200 to-indigo-400 text-zinc-700 py-3 rounded-3xl text-xl font-bold cursor-pointer hover:from-indigo-300 hover:to-indigo-500 hover:text-white hover:scale-105 transition-all duration-300"
-                disabled={status === 'Enviando...'}
-              >
-                {status === 'Enviando...' ? 'Enviando...' : 'Enviar'}
-              </button>
-
-              {/* Mensaje de estado */}
-              {status && (
-                <p
-                  className={`mt-4 text-center font-semibold ${
-                    status.includes('éxito')
-                      ? 'text-green-600'
-                      : status.includes('Error')
-                      ? 'text-red-600'
-                      : 'text-gray-600'
-                  }`}
-                >
-                  {status}
-                </p>
-              )}
-            </form>
-          </div>
-        </div>
+   <section id="contacto">
+  <div
+    className="w-full bg-cover bg-center bg-no-repeat"
+    style={{ backgroundImage: `url(${fondo})` }}
+  >
+    <div className="flex flex-col lg:flex-row px-4 py-12 lg:px-16 max-w-screen-xl mx-auto gap-y-36 lg:gap-x-16">
+      
+      {/* Imagen lateral */}
+      <div className="w-full lg:w-1/2 flex justify-center items-center">
+        <img
+          src={contactImg}
+          alt="Contact Illustration"
+          className="max-w-full h-auto rounded-lg"
+        />
       </div>
-    </section>
+
+      {/* Botón en recuadro */}
+      <div className="w-full lg:w-1/2 bg-zinc-50 p-8 border rounded-lg border-black border-b-[4px] flex flex-col items-center justify-center">
+        <h1 className="text-3xl text-gray-800 font-bold mb-6 text-center">
+          ¿Tienes un proyecto en mente? 
+        </h1>
+        <a
+          href="mailto:rociocastillo.s@gmail.com"
+          className="cursor-pointer rounded-3xl px-16 py-3 text-xl bg-gradient-to-r from-indigo-200 to-indigo-400 text-zinc-700 font-bold hover:from-indigo-300 hover:to-indigo-500 hover:text-white hover:scale-105 transition-all duration-300"
+        >
+          Escríbeme
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
   );
 }
 

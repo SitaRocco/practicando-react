@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import proyecto1 from '../../assets/mockup-pdp.png';
-import proyecto2 from '../../assets/mockup-2-patadepato.png';
-import proyecto3 from '../../assets/pdp3.png';
-import proyecto4 from '../../assets/pdp2.png';
-import proyecto5 from '../../assets/mockup-abogados.png';
+import proyecto1 from '../../assets/vista con logo.png';
+import proyecto2 from '../../assets/vista 1.png';
+import proyecto3 from '../../assets/wireframe.png';
+import proyecto4 from '../../assets/arquetipo.png';
+import proyecto5 from '../../assets/vita abogados.png';
 import proyecto6 from '../../assets/mockup-2.png';
 import proyecto7 from '../../assets/page-3.png';
 import proyecto8 from '../../assets/page-4.png';
@@ -29,13 +29,19 @@ function Projects() {
   const imagenesAbogados = [proyecto5, proyecto6, proyecto7, proyecto8];
   const [indexAbogados, setIndexAbogados] = useState(0);
   const prevAbogados = () =>
-    setIndexAbogados(indexAbogados === 0 ? imagenesAbogados.length - 1 : indexAbogados - 1);
+    setIndexAbogados(
+      indexAbogados === 0 ? imagenesAbogados.length - 1 : indexAbogados - 1
+    );
   const nextAbogados = () =>
-    setIndexAbogados(indexAbogados === imagenesAbogados.length - 1 ? 0 : indexAbogados + 1);
+    setIndexAbogados(
+      indexAbogados === imagenesAbogados.length - 1 ? 0 : indexAbogados + 1
+    );
 
   return (
     <section className="bg-emerald-200 pt-12" id="proyectos">
-      <h2 className="text-4xl sm:text-6xl text-center text-zinc-700">Portafolio</h2>
+      <h2 className="text-4xl sm:text-6xl text-center text-zinc-700">
+        Portafolio
+      </h2>
 
       {/* Bloque Pata de Pato */}
       <div className="min-h-screen bg-emerald-200 py-16 px-8 md:px-20 lg:px-32 flex flex-col items-center justify-center gap-12">
@@ -77,33 +83,64 @@ function Projects() {
 
         {/* Texto y descripción */}
         <div className="w-full max-w-3xl text-center">
-          <h2 className="text-3xl md:text-4xl mb-4 text-zinc-700">Pata de Pato</h2>
+          <h2 className="text-3xl md:text-4xl mb-4 text-zinc-700">
+            Pata de Pato
+          </h2>
 
           {/* Herramientas */}
           <div className="flex flex-wrap justify-center gap-4 mb-3">
             {[svg1, svg2, svg3, svg4, svg5, svg6, svg7].map((icon, i) => (
               <div key={i} className="w-7 h-12 sm:w-10 sm:h-16">
-                <img src={icon} alt={`Herramienta ${i + 1}`} className="w-full h-full object-contain" />
+                <img
+                  src={icon}
+                  alt={`Herramienta ${i + 1}`}
+                  className="w-full h-full object-contain"
+                />
               </div>
             ))}
           </div>
 
           <div className="text-zinc-700 mb-6 text-xl space-y-6 text-start">
+            <div>
+            <h2 className="font-bold text-2xl">Contexto:</h2>
             <p>
-              Este proyecto académico, que realicé a finales del 2024, consistíó en un sitio web para la marca Pata de Pato, que crea accesorios hechos a mano con cuero
-              reciclado, tenía como objetivo reflejar su compromiso con el cuidado del medio ambiente.
-              Además de mostrar y vender sus productos, el sitio debía incorporar un proyecto personal de su
-              creador: una iniciativa de limpieza de playas que realiza junto a su perrita 🐕 y un pato 🦆.
+           
+              Pata de Pato es una marca dedicada a la creación de accesorios
+              hechos a mano con cuero reciclado. Hasta entonces, sus ventas se
+              realizaban únicamente a través de su cuenta de Instagram
+              (@patadepato.cl) y en una tienda física ubicada en Punta de Lobos.
+              Además, su fundador lidera una cuadrilla de limpieza de playas,
+              una iniciativa que comparte junto a su perrita y un pato.
             </p>
+            </div>
+            <div>
+            <h2 className="font-bold text-2xl">Problema:</h2>
             <p>
-              El desarrollo se centró en diseñar una narrativa visual unificada, donde los productos y la
-              historia del proyecto convivieran sin competir. Se trabajó creando secciones diferenciadas
-              pero conectadas por el mismo estilo y tono cercano.
+              
+              La marca necesitaba un sitio web que ampliara su canal de ventas
+              con una tienda online, reflejara su compromiso ecológico y
+              artesanal y contara la historia detrás de la marca, conectando
+              emocionalmente con los clientes.
             </p>
+            </div>
+            <div>
+            <h2 className="font-bold text-2xl">Proceso:</h2>
             <p>
-              La solución fue un sitio que combina tienda online y relato ecológico, reforzando la
-              identidad de la marca y mostrando su propósito con autenticidad.
+              
+              Investigación de usuario para comprender motivaciones y
+              expectativas de los clientes, Benchmark de referentes del sector,
+              Wireframes que definieron la arquitectura y flujo de navegación
+              del sitio y Diseño de narrativa visual que integrara la venta de
+              productos y el proyecto de limpieza de playas.
             </p>
+            </div>
+            <div>
+            <h2 className="font-bold text-2xl">Solución:</h2>
+            <p>
+            Un sitio web que combina tienda online y relato ecológico, con
+            secciones diferenciadas pero unidas por un mismo estilo visual.
+            </p>
+            </div>
           </div>
 
           {/* Botón centrado */}
@@ -159,34 +196,59 @@ function Projects() {
 
         {/* Texto y descripción */}
         <div className="w-full max-w-3xl text-center">
-          <h2 className="text-3xl md:text-4xl mb-4 text-zinc-700">Abogados Viña del Mar</h2>
+          <h2 className="text-3xl md:text-4xl mb-4 text-zinc-700">
+            Abogados Viña del Mar
+          </h2>
 
           {/* Herramientas */}
           <div className="flex flex-wrap justify-center gap-4 mb-3">
             {[svg1, svg6, svg8].map((icon, i) => (
               <div key={i} className="w-7 h-12 sm:w-10 sm:h-16">
-                <img src={icon} alt={`Herramienta ${i + 1}`} className="w-full h-full object-contain" />
+                <img
+                  src={icon}
+                  alt={`Herramienta ${i + 1}`}
+                  className="w-full h-full object-contain"
+                />
               </div>
             ))}
           </div>
 
           <div className="text-zinc-700 mb-6 text-xl space-y-6 text-start">
+            <div>
+            <h2 className="font-bold text-2xl">Contexto:</h2>
             <p>
-              Este proyecto fue desarrollado durante mi práctica profesional en la Agencia SBS Publicidad.
-              Consistió en el rediseño del sitio web de un estudio de abogados, utilizando Elementor como
-              herramienta principal para estructurar y dar forma a la propuesta digital.
-              El desafío fue trabajar con recursos visuales limitados: pocas imágenes y la necesidad de transmitir
-              profesionalismo en un rubro donde la confianza y la claridad son clave.
+               Este proyecto fue desarrollado durante mi práctica profesional en
+              la Agencia SBS Publicidad. Consistió en el rediseño del sitio web
+              de un estudio de abogados en Viña del Mar, utilizando Elementor
+              como herramienta principal para estructurar y dar forma a la
+              propuesta digital.
             </p>
+            </div>
+            <div>
+            <h2 className="font-bold text-2xl">Problema:</h2>
             <p>
-              El desarrollo se centró en optimizar la estructura del sitio, en potenciar el diseño a través de
-              tipografías limpias y una paleta de colores sobria, lo que permitió reforzar la idea de modernidad
-              y generar una navegación clara y accesible.
+              El desafío era trabajar con recursos visuales limitados (pocas
+              imágenes disponibles) y, al mismo tiempo, transmitir una imagen de
+              profesionalismo, confianza y claridad, elementos fundamentales
+              dentro del rubro legal.
             </p>
+            </div>
+            <div>
+            <h2 className="font-bold text-2xl">Proceso:</h2>
             <p>
-              La solución fue un sitio web renovado, capaz de proyectar una imagen sólida y profesional,
-              cumpliendo con las expectativas del cliente y de la agencia.
+              El desarrollo se centró en optimizar la estructura del sitio para
+              facilitar la navegación y potenciar el diseño con tipografías
+              limpias y una paleta de colores sobria.
             </p>
+            </div>
+            <div>
+              <h2 className="font-bold text-2xl">Solución:</h2>
+            <p>
+              El resultado fue un sitio web renovado, sólido y profesional, que
+              logró proyectar confianza y claridad, cumpliendo con las
+              expectativas del cliente y de la Agencia.
+            </p>
+            </div>
           </div>
 
           {/* Botón centrado */}

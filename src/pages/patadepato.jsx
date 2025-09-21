@@ -1,5 +1,4 @@
 import {Navbar, Contact, Footer} from '../components/Components';
-import { mockup, fondo, figma, elementor, wordpress, mockup2, page1, page2, page3, page4, page5, fondo2,mockup3,mockup4,php,html,css,javascript } from '../assets/Assets';
 import { Link, Outlet } from 'react-router-dom';
 
 
